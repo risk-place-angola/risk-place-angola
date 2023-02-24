@@ -17,10 +17,18 @@ A Plataforma tem como objetivo mostrar os lugares de riscos que serão reportado
 
 A Plataforma emitirá um “SOS” alertas de riscos no local em que a pessoa se encontra.
 
+### Objetivo Específico
+
+- Permitir que as pessoas recebam alerta quando se encontram em uma localização de risco;
+
+- Permitir que as pessoas reportem locais de riscos;
+
+- Permitir que as pessoas visualizem locais de riscos;
+
+## Funcionamento
+
+![fluxo-1](funcionamento.png)
+
 ## Impacto
 
 A Plataforma tem impacto social, visa prevenir as pessoas de riscos que atentam à vida.
-
-## Requisitos
-
-- Permitir que as pessoas recebam alerta quando se encontram em uma localização de risco;
