@@ -232,6 +232,9 @@ O usuário pode receber alertas quando estiver em uma localização de risco.
 
 &nbsp;
 
+- **Back-End**: Clean Architecture
+
+
 ### Diagrama de Arquitetura
 
 &nbsp;
