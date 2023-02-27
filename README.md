@@ -199,6 +199,7 @@ O usuário pode receber alertas quando estiver em uma localização de risco.
 - TypeScript
 - Tailwind CSS
 - SASS
+- Zustand (Gerenciamento de estado)
 - Vite
 - Docker
 - Docker Compose
