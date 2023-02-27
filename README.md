@@ -207,6 +207,9 @@ O usuário pode receber alertas quando estiver em uma localização de risco.
 
 ### Mobile
 
+- React Native
+- Typescript
+
 &nbsp;
 
 ### Infraestrutura
