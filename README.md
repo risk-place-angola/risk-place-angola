@@ -173,6 +173,34 @@ O usuário pode receber alertas quando estiver em uma localização de risco.
 <br/>
 <br/>
 
+## Fluxo de Dados
+
+**Usuário**: armazena as informações básicas do usuário, como nome, e-mail e senha.
+
+- Nome
+- E-mail
+- Senha
+
+**Local de risco**: armazena as informações sobre o local de risco reportados pelos usuários, como tipo de risco, localização, descrição, etc.
+
+- Localização (latitude e longitude)
+- Descrição
+- Data de criação
+
+**Tipo de risco**: armazena as informações sobre o tipo de risco, como nome e descrição.
+
+- Nome
+- Descrição
+
+**Alerta de Risco**: armazena as informações sobre os alertas emitidos pela plataforma, como localização, data e hora.
+
+- Localização (latitude e longitude)
+- Data e hora
+- Estado (ativo ou inativo)
+
+<br/>
+<br/>
+
 ---
 
 ## **Desenvolvimento**
