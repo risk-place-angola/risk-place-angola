@@ -104,7 +104,7 @@ O público-alvo é qualquer pessoa que queira se manter informada protegida e in
 
 ## Diagrama de Casos de Uso
 
-![alt](RPA_UMLUseCase.png)
+![Diagrama de Casos de Uso](./assets/RPA_UMLUseCase.png)
 
 <br/>
 <br/>
