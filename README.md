@@ -35,7 +35,7 @@ A partir deste meio de comunicação, o **ERFCE** poderá tomar as devidas provi
 
 **ERCE** - Entidade Responsável por Resolver Chamadas de Emergência
 
-As Entidades Responsáveis de Resolverem as Chamadas de Emergências são:
+As Entidades Responsáveis por Resolverem as Chamadas de Emergências são:
 
 - Polícia;
 - Bombeiros;
