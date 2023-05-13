@@ -35,7 +35,13 @@ A partir deste meio de comunicação, o **ERFCE** poderá tomar as devidas provi
 
 **ERCE** - Entidade Responsável por Resolver Chamadas de Emergência
 
-As Entidades Responsáveis de Resolverem as Chamadas de Emergências são: - Polícia; - Bombeiros; - Serviços de saúde (Hospitais, Clínicas, etc); - Protecção Civil; - Outras entidades.
+As Entidades Responsáveis de Resolverem as Chamadas de Emergências são:
+
+- Polícia;
+- Bombeiros;
+- Serviços de saúde (Hospitais, Clínicas, etc);
+- Protecção Civil;
+- Outras entidades.
 
 Entidade Responsável por Resolver Chamadas de Emergência terá acesso a Plataforma simples onde verá a localização em tempo real do **Usuário** que acionou o botão de alerta.
 
