@@ -1,136 +1,177 @@
 # Risk Place Angola
 
-É uma plataforma (open-source) para mapear (ou reportar) locais de riscos.
+**Risk Place Angola (RPA)** é uma plataforma **open-source** criada para **mapear, monitorar e reportar locais de risco em Angola**, conectando cidadãos, entidades de emergência e comunidades locais em uma rede de **colaboração e resposta rápida**.
 
-Risk Place Angola visa facilitar a chamada de emergência e reportar locais de risco.
+O sistema tem como **propósito salvar vidas**, ao facilitar **alertas automáticos, notificações de risco georreferenciadas e apoio às entidades de resposta rápida**.
 
-### 👋 Significado das siglas
+Mais do que uma tecnologia, a RPA é uma **ponte entre as pessoas** — uma forma de criar solidariedade digital e segurança colaborativa.
 
-**ERFCE** - Entidade Responsável por Fazer Chamadas de Emergência
 
-**ERCE** - Entidade Responsável por Resolver Chamadas de Emergência
 
-**RPA** - Risk Place Angola
 
-### 🤔 Como funciona?
+## 💡 Missão
 
-O Botão de alerta quando acionado, fará automaticamente uma ligação notificando a Entidade Responsável por Fazer as Chamadas de Emergência (**ERFCE**) seguindo a localização de onde o botão foi acionado ou seja, a localização do Usuário (**U**).
+Permitir que **qualquer pessoa**, em **qualquer lugar**, possa **alertar situações de risco em tempo real**, e que as **entidades responsáveis** possam **intervir rapidamente**, reduzindo perdas humanas e materiais.
 
-O **Usuário** aciona o botão de alerta, o sistema fará uma ligação para o **ERFCE**, notificando que o **Usuário** está em perigo e precisa de ajuda.
 
-Quando o **Usuário** pressionar o botão de alerta é enviado a sua localização para o **ERFCE** Entidade Responsável por fazer as Chamadas de Emergência.
+## 🧭 Visão Geral
 
-O **Usuário** terá que pressionar o botão de alerta por 5 segundos para que o sistema faça a ligação para o **ERFCE**.
+A RPA atua como um **elo de comunicação e cooperação** entre:
 
-Caso **Usuário** clicque no botão de alerta por 5 vezes seguidas, poderá enviar uma mensagem de voz para o **ERFCE**.
+* 👤 **Usuários** em situações de risco;
+* ☎️ **ERFCE** — *Entidades Responsáveis por Fazer Chamadas de Emergência*;
+* 🚑 **ERCE** — *Entidades Responsáveis por Resolver Chamadas de Emergência*.
 
-**ERFCE** - Entidade Responsável por Fazer Chamadas de Emergência
+O sistema utiliza **geolocalização em tempo real**, **alertas por botão físico ou digital**, e **notificações automáticas**, promovendo uma **resposta coordenada e imediata** em situações de emergência.
 
-A Entidade Responsável por Fazer Chamadas de Emergência terá acesso a Plataforma
-simples onde verá a localização em tempo real do **Usuário** que acionou o botão de alerta.
 
-Com as notificações recebidas no sistema, o **ERFCE** terá que ligar para o **Usuário** para saber o que está acontecendo e se o **Usuário** está em perigo.
+## 🔠 Significado das Siglas
 
-A partir deste meio de comunicação, o **ERFCE** poderá tomar as devidas providências para resolver o problema.
+| Sigla     | Significado                                              | Função Principal                                                                                     |
+| --------- | -------------------------------------------------------- | ---------------------------------------------------------------------------------------------------- |
+| **ERFCE** | Entidade Responsável por Fazer Chamadas de Emergência    | Recebe alertas e contacta o utilizador; pode confirmar ou encaminhar para a ERCE.                    |
+| **ERCE**  | Entidade Responsável por Resolver Chamadas de Emergência | Atua diretamente na resolução (Polícia, Bombeiros, Hospitais, Proteção Civil, etc.).                 |
+| **RPA**   | Risk Place Angola                                        | Plataforma que conecta cidadãos e entidades de resposta, criando uma rede de segurança colaborativa. |
 
-**ERCE** - Entidade Responsável por Resolver Chamadas de Emergência
 
-As Entidades Responsáveis por Resolverem as Chamadas de Emergências são:
+## ⚙️ Como Funciona
 
-- Polícia;
-- Bombeiros;
-- Serviços de saúde (Hospitais, Clínicas, etc);
-- Protecção Civil;
-- Outras entidades.
-
-Entidade Responsável por Resolver Chamadas de Emergência terá acesso a Plataforma simples onde verá a localização em tempo real do **Usuário** que acionou o botão de alerta.
-
-## Objetivos
-
-O objetivo da Plataforma é prevenir acidentes, crimes e outros incidentes que possam colocar a vida das pessoas em perigo.
-
-### Objetivo Geral
-
-O objetivo principal da plataforma é de permitir que mais pessoas tenham conhecimentos de locais de riscos e alertar quando ocorrer algum incidente.
-
-A Plataforma tem como objetivo alertar incidentes e reportar os lugares de riscos e consequentemente ajudar na resolução desses mesmos problemas por parte das entidades responsáveis, que puderam tomar conhecimento a partir da plataforma.
-
-## Impacto
-
-A Plataforma tem impacto social, a mesma visa prevenir as pessoas de riscos que atentam à vida.
-
-## Público Alvo
-
-O público-alvo é qualquer pessoa que queira se manter informada protegida e informar em relação aos riscos que ocorrem em sua localidade.
-
-<br/>
-<br/>
+O sistema possui **duas funcionalidades principais**: **🔴 Alert** e **🟡 Report** — ambas visíveis e acessíveis no **mapa interativo**, que é o centro da experiência do utilizador.
 
 ---
 
-## **Análise do Sistema**
+### 🔴 Alert – Situações de Emergência (Fluxo Institucional)
 
-&nbsp;
+1. O **usuário (U)** aciona o botão de alerta no aplicativo (ou em um dispositivo físico).
+2. Após **5 segundos pressionando**, o sistema:
 
-## Requisitos de Software
+   * Envia automaticamente a **localização GPS**, **identificação** e **tipo de emergência**.
+   * Notifica **imediatamente** tanto a **ERFCE** quanto a **ERCE** mais próxima.
+3. O **ERCE** recebe a notificação **em tempo real**, podendo agir **mesmo sem confirmação prévia** do ERFCE.
+4. O **ERFCE** atua em paralelo, **contactando o utilizador** e **atualizando o estado** da ocorrência (ex.: “confirmada”, “em atendimento”, “resolvida”).
+5. O ciclo é monitorizado no **mapa central**, com indicadores visuais (vermelho piscante para emergências ativas).
 
-&nbsp;
+🔒 Alguns alertas **não são exibidos publicamente**, por motivos de segurança e privacidade (ex.: violência doméstica, sequestros, situações pessoais).
 
-### Requisitos Funcionais
+🌍 Já **alertas públicos** (ex.: acidente de via, incêndio, desabamento) podem ser **visíveis e colaborativos**, permitindo que a comunidade visualize e evite a área afetada.
 
-|  ID  | Descrição                                                                                                                                       | Prioridade |
-| :--: | ----------------------------------------------------------------------------------------------------------------------------------------------- | :--------: |
-| RF01 | A plataforma deve posuir um botão de alerta para que os usuários possam acioná-lo em caso de emergência.                                        | Essencial  |
-| RF02 | A plataforma deve monitorar o botão de alerta e ao fim de 5 segundos contínuos pressionado deve enviar a notifição e a localização.             | Essencial  |
-| RF03 | A plataforma deve monitorar os clicks no botão de alerta e ao fim de 5 clicks enviar uma notificação de áudio e a localização.                  | Essencial  |
-| RF04 | A plataforma deve Permitir que ao pressionar o botão de Alerta deve ligar localização do dispositivo.                                           | Essencial  |
-| RF05 | A plataforma deve permitir que usuários e entidades responsáveis visualizem locais de risco em um mapa.                                         | Essencial  |
-| RF06 | A plataforma deve permitir que as entidades responsáveis visualizem a localização de quem precionou o botão de alerta em um mapa em tempo real. | Essencial  |
-|      |                                                                                                                                                 |            |
+---
 
-&nbsp;
-&nbsp;
+### 🟡 Report – Locais de Risco (Colaboração Pública)
 
-### Requisitos Não Funcionais
+1. Qualquer utilizador pode **reportar locais de risco** (ruas escuras, buracos, zonas de assalto, lixo acumulado, incêndios pequenos, etc.).
+2. Esses reports aparecem no **mapa colaborativo**, visíveis a todos os utilizadores próximos.
+3. Outros utilizadores podem:
 
-|  ID   | Descrição                                                                                                                                                                                            | Prioridade |
-| :---: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :--------: |
-| RNF01 | A plataforma deve ser intuitiva e fácil de usar para que os usuários possam acionar o botão de alerta rapidamente em caso de emergência.                                                             | Importante |
-| RNF02 | A plataforma deve ser confiável e funcionar corretamente em todos os momentos, garantindo que os usuários possam receber alertas e acionar o botão de alerta quando necessário.                      | Importante |
-| RNF03 | A plataforma deve estar disponível para uso a qualquer momento, garantindo que os usuários possam acionar o botão de alerta em caso de emergência, mesmo em situações de alta demanda.               | Importante |
-| RNF04 | A plataforma deve ter bom desempenho e velocidade de resposta, garantindo que os alertas sejam enviados e as ligações de emergência sejam realizadas rapidamente.                                    | Importante |
-| RNF05 | A plataforma deve ser capaz de lidar com grandes volumes de dados sem falhas ou interrupções no serviço e acessos simultâneos.                                                                       | Importante |
-| RNF06 | A plataforme deve ser desenvolvido em uma plataforma open-source, permitindo contribuições da comunidade de desenvolvedores                                                                          | Importante |
-| RNF07 | A plataforma deve ser compatível com os ecrãs dos diferentes dispositivos móveis, sendo responsivo, se adaptando funcionando em dispositivos móveis e desktop com os seus variados tamanhos de tela. | Importante |
-|       |                                                                                                                                                                                                      |            |
+   * Confirmar o risco ("👍 Confirmar risco").
+   * Comentar ou adicionar informação adicional.
+4. O sistema usa **validação comunitária**:
 
-&nbsp;
-&nbsp;
+   * Reports **confirmados** ganham maior visibilidade.
+   * Reports **antigos ou não confirmados** são rebaixados ou arquivados.
+5. A RPA gera um **histórico de riscos** que apoia **políticas públicas, planeamento urbano e prevenção comunitária**.
+
+## 🎯 Objetivos
+
+### Objetivo Geral
+
+Construir uma **rede colaborativa de segurança pública**, unindo cidadãos e entidades de emergência na **resposta rápida e preventiva**.
+
+### Objetivos Específicos
+
+* Mapear e classificar **locais e situações de risco** em tempo real.
+* Reduzir o **tempo de resposta** das entidades de emergência.
+* Fornecer **dados abertos** para políticas públicas.
+* Promover uma **cultura digital de solidariedade e prevenção**.
+
+
+## Impacto
+
+A RPA tem impacto direto na segurança pública e proteção civil, permitindo:
+
+* Identificação precoce de **zonas perigosas**.
+* **Coordenação imediata** entre cidadãos e autoridades.
+* **Redução de vítimas** e incidentes por falta de aviso.
+* Criação de uma **rede de vigilância ativa** e participativa.
+
+
+## Público Alvo
+
+* Cidadãos e comunidades locais.
+* Polícia, bombeiros, hospitais e proteção civil.
+* Municípios e ONGs ligadas à gestão de risco.
+* Universidades, pesquisadores e desenvolvedores interessados em **soluções open-source para cidades seguras**.
+
+
+
+
+## 🧩 Análise do Sistema
+
+
+
+
+### ⚙️ Requisitos Funcionais
+
+| ID       | Descrição                                                                                                                                                        | Prioridade |
+| -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **RF01** | A plataforma deve possuir um **botão de alerta** para que os usuários possam acioná-lo em caso de emergência.                                                    | Essencial  |
+| **RF02** | A plataforma deve **monitorar o botão de alerta** e, ao fim de **5 segundos contínuos pressionado**, enviar **notificação e localização GPS** à ERCE e ERFCE.    | Essencial  |
+| **RF03** | A plataforma deve permitir um **modo alternativo de alerta**, enviando notificação e localização **após 5 toques consecutivos** no botão de alerta.              | Essencial  |
+| **RF04** | Ao pressionar o botão de alerta, a plataforma deve **ativar automaticamente a geolocalização** do dispositivo, caso esteja desativada.                           | Essencial  |
+| **RF05** | A plataforma deve permitir que **usuários e entidades** visualizem **locais de risco e ocorrências** num **mapa interativo em tempo real**.                      | Essencial  |
+| **RF06** | A plataforma deve permitir que as **entidades responsáveis (ERCE e ERFCE)** visualizem a **localização precisa e movimento** do utilizador que acionou o alerta. | Essencial  |
+| **RF07** | A plataforma deve permitir que **qualquer utilizador** reporte **locais de risco** (🟡 Report), visíveis publicamente no mapa.                                   | Importante |
+| **RF08** | A plataforma deve permitir que **outros usuários confirmem** ou **comentem reports existentes**, reforçando a validação comunitária.                             | Importante |
+| **RF09** | O sistema deve **notificar automaticamente** os utilizadores próximos de **novos alertas (🔴)** e **reports (🟡)** relevantes.                                   | Essencial  |
+| **RF10** | A plataforma deve permitir que a **ERCE** atualize o **estado da ocorrência** (pendente, em atendimento, resolvida).                                             | Importante |
+| **RF11** | A plataforma deve **registrar logs e históricos** de alertas e reports, para consulta e análise posterior.                                                       | Importante |
+| **RF12** | O sistema deve permitir **autenticação de utilizadores e entidades**, com **diferentes papéis** (Usuário, ERFCE, ERCE).                                          | Essencial  |
+| **RF13** | O sistema deve oferecer uma **interface de painel** para que a **ERFCE** e a **ERCE** monitorem, filtrem e analisem ocorrências.                                 | Importante |
+
+---
+
+### 🧱 Requisitos Não Funcionais
+
+| ID        | Descrição                                                                                                                                          | Prioridade |
+| --------- | -------------------------------------------------------------------------------------------------------------------------------------------------- | ---------- |
+| **RNF01** | A plataforma deve ser **intuitiva e fácil de usar**, garantindo que o botão de alerta possa ser acionado rapidamente em situação de emergência.    | Importante |
+| **RNF02** | A plataforma deve ser **confiável** e **operar corretamente** em todos os momentos, sem falhas críticas durante emergências.                       | Importante |
+| **RNF03** | O sistema deve estar **disponível 24/7**, garantindo funcionamento contínuo, mesmo em horários de alta demanda.                                    | Importante |
+| **RNF04** | O sistema deve ter **baixo tempo de resposta**, enviando alertas e atualizações em **menos de 2 segundos** após acionamento.                       | Importante |
+| **RNF05** | O sistema deve **suportar alto volume de dados e acessos simultâneos** (centenas de notificações por minuto).                                      | Importante |
+| **RNF06** | O projeto deve ser **open-source**, permitindo contribuições da comunidade e auditoria pública do código.                                          | Importante |
+| **RNF07** | A plataforma deve ser **compatível com dispositivos móveis e desktop**, com **design responsivo** adaptável a diferentes tamanhos de ecrã.         | Importante |
+| **RNF08** | A comunicação entre o aplicativo e o servidor deve ser **segura (HTTPS + Criptografia TLS)**, garantindo a privacidade dos dados dos utilizadores. | Essencial  |
+| **RNF09** | O sistema deve ter **registro e monitoramento de erros**, garantindo **observabilidade e manutenção eficiente**.                                   | Importante |
+| **RNF10** | A infraestrutura deve permitir **escalabilidade horizontal** (novos nós/instâncias) sem interrupção do serviço.                                    | Importante |
+
+---
+
+
 &nbsp;
 
 ## Diagrama de Casos de Uso
 
-![Diagrama de Casos de Uso](./assets/RPA_UMLUseCase.png)
+![Diagrama de Casos de Uso](./assets/RPA_UMLUseCase01.png)
 
 <br/>
-<br/>
 
-## MVP - Produto Mínimo Viável
+## 🚀 MVP – Produto Mínimo Viável
 
-- [ ] Um botão de alerta para que os usuários possam acioná-lo em caso de emergência.
-- [ ] Ao fim de 5 segundos pressionando o botão de alerta a plataforma deve enviar a notifição e a localização.
-- [ ] Ao fim de 5 clicks no botão de alerta a plataforma deve enviar uma notificação de áudio e a localização.
-- [ ] Uma interface simples para que as entidades responsáveis possam ver as notificações de emergência recebidas e as localizações dos usuários que as enviaram.
-- [ ] Um mapa interativo que mostra locais de risco conhecidos na área.
+1. **Mapa interativo** com alertas (vermelhos) e reports (amarelos).
+2. **Botão de alerta digital** com envio automático de localização.
+3. **Notificação em tempo real** para ERCE e ERFCE.
+4. **Painel institucional** para monitoramento de ocorrências.
+5. **Sistema de reports comunitários** com confirmações e comentários.
+6. **Autenticação e papéis** (Usuário, ERFCE, ERCE).
 
-> Usuário (U) -> Botão de alerta -> Ligação de emergência <-> Entidade Responsável de fazer as Chamadas de Emergência (ERFCE) -> Mapa de ocorrências -> Usuário (U);
 
 &nbsp;
 
 ## 👥 Comunidade
 
-Junte-se a comunidade do Risk Place Angola no Discord
-[Clicando Aqui](https://discord.gg/qvTzECSZch)
+💬 **Junte-se à comunidade do Risk Place Angola no [Discord](https://discord.gg/qvTzECSZch)**
+Contribua, reporte bugs, proponha melhorias e ajude-nos a construir uma **rede de segurança comunitária open-source.**
 
 ---
 
