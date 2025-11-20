@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Request account and data deletion for MakaNetu (Risk Place Angola)">
+    <meta name="keywords" content="MakaNetu, Risk Place Angola, Delete Account, Data Deletion, GDPR">
+    <title>Delete Account - MakaNetu (Risk Place Angola)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .language-selector {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .language-selector a {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #e74c3c;
+            font-size: 0.9em;
+        }
+
+        .language-selector a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .language-selector a.active {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        header {
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .danger-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #e74c3c;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .method-card {
+            background-color: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .method-card h3 {
+            margin-top: 0;
+            color: #e74c3c;
+        }
+
+        .steps {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .step {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+        }
+
+        .button-secondary {
+            background-color: #6c757d;
+        }
+
+        .button-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #successMessage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <a href="delete-account.html" class="active">🇬🇧 EN</a>
+            <a href="delete-account_pt.html">🇦🇴 PT</a>
+        </div>
+
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="MakaNetu Logo" style="width: 120px; height: auto;">
+            </div>
+            <h1>🗑️ Delete Account & Data</h1>
+            <p class="subtitle"><strong>MakaNetu (Risk Place Angola)</strong></p>
+        </header>
+
+        <section>
+            <div class="info-box">
+                <p><strong>Your Privacy Rights</strong></p>
+                <p>You have the right to request deletion of your account and associated personal data at any time. This page explains how to exercise this right in compliance with GDPR, LGPD, and data protection laws.</p>
+            </div>
+
+            <div class="danger-box">
+                <p><strong>⚠️ IMPORTANT WARNING</strong></p>
+                <p>Account deletion is <strong>permanent and irreversible</strong>. Once deleted:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>You will lose access to your account</li>
+                    <li>Your personal data will be permanently deleted</li>
+                    <li>You will no longer receive emergency notifications</li>
+                    <li>This action cannot be undone</li>
+                </ul>
+            </div>
+
+            <h2>📱 Method 1: Delete Account In-App (Recommended)</h2>
+            <div class="method-card">
+                <h3><span class="icon">✅</span>Fastest & Easiest Method</h3>
+                <p>Delete your account directly from the MakaNetu mobile app:</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <strong>Open the MakaNetu app</strong> on your device
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <strong>Log in</strong> to your account (if not already logged in)
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <strong>Go to Settings</strong> (⚙️ icon in the menu)
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <strong>Tap "Account"</strong> or "Profile"
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <strong>Scroll down</strong> and tap <span style="color: #dc3545; font-weight: bold;">"Delete Account"</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">6</span>
+                        <strong>Confirm deletion</strong> by entering your password
+                    </div>
+                    <div class="step">
+                        <span class="step-number">7</span>
+                        <strong>Read the warning</strong> and tap "Yes, Delete My Account"
+                    </div>
+                </div>
+
+                <div class="success-box" style="margin-top: 20px;">
+                    <p><strong>✅ Instant Deletion:</strong> Your account will be deleted immediately, and you will receive a confirmation email.</p>
+                </div>
+            </div>
+
+            <h2>📧 Method 2: Email Deletion Request</h2>
+            <div class="method-card">
+                <h3><span class="icon">📨</span>Request Deletion via Email</h3>
+                <p>If you cannot access the app or prefer email, send a deletion request to:</p>
+                
+                <div class="contact-form">
+                    <form id="deletionForm" action="mailto:riskplaceangola@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="fullName">Full Name <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Your full name as registered">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address (registered in MakaNetu) <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="your.email@example.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userId">User ID or Phone Number (if known)</label>
+                            <input type="text" id="userId" name="userId" placeholder="Optional - helps us locate your account faster">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Reason for Deletion (Optional)</label>
+                            <select id="reason" name="reason">
+                                <option value="">Select a reason (optional)</option>
+                                <option value="privacy">Privacy concerns</option>
+                                <option value="not_using">No longer using the app</option>
+                                <option value="alternative">Found an alternative</option>
+                                <option value="technical">Technical issues</option>
+                                <option value="other">Other</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo">Additional Information (Optional)</label>
+                            <textarea id="additionalInfo" name="additionalInfo" placeholder="Any additional details you'd like to share..."></textarea>
+                        </div>
+
+                        <div class="alert-box">
+                            <p><strong>⚠️ Identity Verification Required</strong></p>
+                            <p>To protect your privacy, we may ask you to verify your identity before processing the deletion request. This may include:</p>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Answering security questions</li>
+                                <li>Providing proof of account ownership</li>
+                                <li>Confirming via verification code sent to your registered email</li>
+                            </ul>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit" class="button">
+                                <span class="icon">📧</span> Send Deletion Request
+                            </button>
+                            <button type="reset" class="button button-secondary">
+                                <span class="icon">🔄</span> Clear Form
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="info-box" style="margin-top: 20px;">
+                    <p><strong>📧 Email Template (Copy & Paste):</strong></p>
+                    <pre style="background: white; padding: 15px; border-radius: 4px; overflow-x: auto;">
+To: riskplaceangola@gmail.com
+Subject: Account Deletion Request - MakaNetu
+
+Dear MakaNetu Support Team,
+
+I am requesting the permanent deletion of my account and all associated personal data in accordance with GDPR/LGPD data protection regulations.
+
+Account Details:
+- Full Name: [Your Full Name]
+- Email Address: [your.email@example.com]
+- User ID (if known): [Your User ID]
+- Phone Number (if registered): [Your Phone]
+
+I understand that:
+1. This action is permanent and irreversible
+2. All my personal data will be deleted
+3. Public incident reports will be anonymized
+4. I will no longer receive emergency notifications
+
+Please confirm receipt of this request and process the deletion within 30 days as required by law.
+
+Thank you,
+[Your Name]
+                    </pre>
+                </div>
+            </div>
+
+            <h2>📊 What Data Gets Deleted?</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Data Type</th>
+                        <th>Action</th>
+                        <th>Retention Period</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Personal Information</strong><br>(Name, email, password)</td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Profile Photo</strong></td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Phone Number</strong></td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>GPS Location History</strong></td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Device ID & FCM Token</strong></td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Authentication Tokens</strong></td>
+                        <td><span style="color: #dc3545;">✗ Permanently Deleted</span></td>
+                        <td>Immediate</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Public Incident Reports</strong><br>(created by you)</td>
+                        <td><span style="color: #28a745;">✓ Retained (Anonymized)</span></td>
+                        <td>Permanent (public safety)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Emergency Alerts</strong><br>(sent to ERCE/ERFCE)</td>
+                        <td><span style="color: #28a745;">✓ Retained (Anonymized)</span></td>
+                        <td>Legal requirement</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="alert-box">
+                <p><strong>📌 Why Some Data is Retained (Anonymized):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Public Safety:</strong> Incident reports help protect the community and must remain available</li>
+                    <li><strong>Legal Compliance:</strong> Emergency records may be required by law enforcement for investigations</li>
+                    <li><strong>Statistical Analysis:</strong> Anonymized data helps improve public safety strategies</li>
+                    <li><strong>No Personal Link:</strong> Retained data is completely anonymized and cannot be traced back to you</li>
+                </ul>
+            </div>
+
+            <h2>⏱️ Processing Timeline</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Request Received:</strong> We acknowledge your deletion request within 24 hours
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Identity Verification:</strong> 1-3 business days (if email request)
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Data Deletion:</strong> Completed within 7 business days
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Confirmation Email:</strong> You receive final confirmation of deletion
+                </div>
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Maximum Timeline:</strong> 30 calendar days (as required by GDPR/LGPD)
+                </div>
+            </div>
+
+            <h2>🔐 Data Security During Deletion</h2>
+            <ul>
+                <li><strong>Secure Erasure:</strong> Data is securely overwritten and cannot be recovered</li>
+                <li><strong>Backup Removal:</strong> Data is removed from all backups within 90 days</li>
+                <li><strong>Third-Party Notification:</strong> We notify Firebase, Google Maps, and other services to delete your data</li>
+                <li><strong>Audit Trail:</strong> We maintain a secure log of deletion requests (no personal data) for legal compliance</li>
+            </ul>
+
+            <h2>❓ Frequently Asked Questions</h2>
+
+            <h3>Can I recover my account after deletion?</h3>
+            <p><strong>No.</strong> Account deletion is permanent and irreversible. You would need to create a new account.</p>
+
+            <h3>What happens to my incident reports?</h3>
+            <p>Public incident reports remain visible but are <strong>anonymized</strong> (shown as "Anonymous User"). This preserves community safety history while protecting your privacy.</p>
+
+            <h3>Will emergency services still have my old alerts?</h3>
+            <p>Yes. Emergency alerts sent to ERCE/ERFCE may be retained for legal and investigative purposes, but your identity is anonymized after account deletion.</p>
+
+            <h3>Can I delete specific data without deleting my account?</h3>
+            <p>Yes! You can:</p>
+            <ul>
+                <li>Update your profile information in-app</li>
+                <li>Remove your profile photo</li>
+                <li>Disable location tracking (Settings → Privacy)</li>
+                <li>Contact us to delete specific data: <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></li>
+            </ul>
+
+            <h3>How long does deletion take?</h3>
+            <ul>
+                <li><strong>In-app deletion:</strong> Immediate</li>
+                <li><strong>Email request:</strong> Up to 30 days (typically 7 business days)</li>
+            </ul>
+
+            <h3>Will I be notified when deletion is complete?</h3>
+            <p>Yes, you will receive a confirmation email at your registered email address.</p>
+
+            <h3>What if I'm having trouble deleting my account?</h3>
+            <p>Contact our support team:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></li>
+                <li><strong>GitHub Issues:</strong> <a href="https://github.com/risk-place-angola/mobile-risk-place/issues" target="_blank">github.com/risk-place-angola/mobile-risk-place/issues</a></li>
+                <li><strong>Discord:</strong> <a href="https://discord.gg/s2Nk4xYV" target="_blank">discord.gg/s2Nk4xYV</a></li>
+            </ul>
+
+            <h2>📜 Legal Rights & Compliance</h2>
+            <p>This deletion process complies with:</p>
+            <ul>
+                <li><strong>GDPR</strong> (General Data Protection Regulation - European Union) - Article 17 "Right to Erasure"</li>
+                <li><strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brazil) - Article 18, Right to Deletion</li>
+                <li><strong>CCPA</strong> (California Consumer Privacy Act - USA)</li>
+                <li><strong>Angola Data Protection Laws</strong></li>
+                <li><strong>Google Play Store</strong> Data Safety Requirements</li>
+                <li><strong>App Store</strong> Privacy Guidelines</li>
+            </ul>
+
+            <h2>📞 Need Help?</h2>
+            <div class="contact-form" style="background-color: #f8f9fa;">
+                <h3 style="margin-top: 0;">Contact Support</h3>
+                <p><strong>📧 Email:</strong> <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></p>
+                <p><strong>🌐 Website:</strong> <a href="https://risk-place-angola.github.io/privacy-policy" target="_blank">Privacy Policy</a></p>
+                <p><strong>💬 Discord Community:</strong> <a href="https://discord.gg/s2Nk4xYV" target="_blank">discord.gg/s2Nk4xYV</a></p>
+                <p><strong>🐙 GitHub:</strong> <a href="https://github.com/risk-place-angola" target="_blank">github.com/risk-place-angola</a></p>
+                <p><strong>⏰ Response Time:</strong> 24-72 hours (business days)</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <p><strong>🔓 Open Source Transparency</strong></p>
+                <p>MakaNetu is an open source project. You can review our data deletion implementation in our public repositories:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><a href="https://github.com/risk-place-angola/backend-risk-place" target="_blank">Backend Source Code</a></li>
+                    <li><a href="https://github.com/risk-place-angola/mobile-risk-place" target="_blank">Mobile App Source Code</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>MakaNetu (Risk Place Angola)</strong></p>
+            <p><em>Maka = Problem | Netu = Ours | MakaNetu = Solving problems together</em></p>
+            <p style="margin-top: 15px;">
+                <a href="index_en.html">Privacy Policy</a> •
+                <a href="delete-account.html">Delete Account</a> •
+                <a href="https://github.com/risk-place-angola" target="_blank">GitHub</a> •
+                <a href="https://discord.gg/s2Nk4xYV" target="_blank">Discord</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.85em;">
+                Last Updated: November 20, 2025<br>
+                This page complies with GDPR, LGPD, and CCPA requirements
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Form submission handling
+        document.getElementById('deletionForm').addEventListener('submit', function(e) {
+            // Let the default mailto: action proceed
+            alert('Your email client will open. Please send the email to complete your deletion request.\n\nIf your email client doesn\'t open, please manually send an email to: riskplaceangola@gmail.com');
+        });
+    </script>
+</body>
+</html>

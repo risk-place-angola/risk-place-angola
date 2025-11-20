@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Solicite exclusão de conta e dados do MakaNetu (Risk Place Angola)">
+    <meta name="keywords" content="MakaNetu, Risk Place Angola, Excluir Conta, Exclusão de Dados, GDPR, LGPD">
+    <title>Excluir Conta - MakaNetu (Risk Place Angola)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background-color: #f5f5f5;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            background-color: white;
+            padding: 40px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .language-selector {
+            text-align: right;
+            margin-bottom: 20px;
+        }
+
+        .language-selector a {
+            margin-left: 10px;
+            padding: 5px 10px;
+            border: 1px solid #e74c3c;
+            border-radius: 4px;
+            text-decoration: none;
+            color: #e74c3c;
+            font-size: 0.9em;
+        }
+
+        .language-selector a:hover {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        .language-selector a.active {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        header {
+            border-bottom: 3px solid #e74c3c;
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            text-align: center;
+        }
+
+        .logo {
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            color: #e74c3c;
+            font-size: 2.5em;
+            margin-bottom: 10px;
+        }
+
+        .subtitle {
+            color: #666;
+            font-size: 1.1em;
+        }
+
+        .alert-box {
+            background-color: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .info-box {
+            background-color: #d1ecf1;
+            border-left: 4px solid #17a2b8;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .danger-box {
+            background-color: #f8d7da;
+            border-left: 4px solid #dc3545;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .success-box {
+            background-color: #d4edda;
+            border-left: 4px solid #28a745;
+            padding: 15px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        h2 {
+            color: #2c3e50;
+            font-size: 1.8em;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            border-left: 4px solid #e74c3c;
+            padding-left: 15px;
+        }
+
+        h3 {
+            color: #34495e;
+            font-size: 1.3em;
+            margin-top: 25px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        ul {
+            margin-left: 30px;
+            margin-bottom: 15px;
+        }
+
+        li {
+            margin-bottom: 10px;
+        }
+
+        .method-card {
+            background-color: #f8f9fa;
+            border: 2px solid #e9ecef;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+
+        .method-card h3 {
+            margin-top: 0;
+            color: #e74c3c;
+        }
+
+        .steps {
+            background-color: white;
+            padding: 15px;
+            border-radius: 4px;
+            margin: 15px 0;
+        }
+
+        .step {
+            padding: 10px 0;
+            border-bottom: 1px solid #eee;
+        }
+
+        .step:last-child {
+            border-bottom: none;
+        }
+
+        .step-number {
+            display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-color: #e74c3c;
+            color: white;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 30px;
+            margin-right: 10px;
+            font-weight: bold;
+        }
+
+        .contact-form {
+            background-color: #f8f9fa;
+            padding: 30px;
+            border-radius: 8px;
+            margin: 30px 0;
+        }
+
+        .form-group {
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        input[type="text"],
+        input[type="email"],
+        textarea,
+        select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            font-size: 1em;
+            font-family: inherit;
+        }
+
+        textarea {
+            min-height: 120px;
+            resize: vertical;
+        }
+
+        input:focus,
+        textarea:focus,
+        select:focus {
+            outline: none;
+            border-color: #e74c3c;
+            box-shadow: 0 0 0 3px rgba(231, 76, 60, 0.1);
+        }
+
+        .required {
+            color: #e74c3c;
+        }
+
+        .button {
+            display: inline-block;
+            background-color: #e74c3c;
+            color: white;
+            padding: 12px 30px;
+            border: none;
+            border-radius: 4px;
+            font-size: 1.1em;
+            font-weight: 600;
+            cursor: pointer;
+            text-decoration: none;
+            transition: background-color 0.3s;
+        }
+
+        .button:hover {
+            background-color: #c0392b;
+        }
+
+        .button-secondary {
+            background-color: #6c757d;
+        }
+
+        .button-secondary:hover {
+            background-color: #5a6268;
+        }
+
+        .button-group {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+        }
+
+        th, td {
+            border: 1px solid #ddd;
+            padding: 12px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #e74c3c;
+            color: white;
+        }
+
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
+
+        .icon {
+            font-size: 1.2em;
+            margin-right: 5px;
+        }
+
+        footer {
+            margin-top: 50px;
+            padding-top: 30px;
+            border-top: 2px solid #eee;
+            text-align: center;
+            color: #666;
+            font-size: 0.9em;
+        }
+
+        a {
+            color: #e74c3c;
+            text-decoration: none;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 768px) {
+            .container {
+                padding: 20px;
+            }
+
+            h1 {
+                font-size: 2em;
+            }
+
+            h2 {
+                font-size: 1.5em;
+            }
+
+            .button-group {
+                flex-direction: column;
+            }
+
+            table {
+                font-size: 0.9em;
+            }
+        }
+
+        .hidden {
+            display: none;
+        }
+
+        #successMessage {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="language-selector">
+            <a href="delete-account.html">🇬🇧 EN</a>
+            <a href="delete-account_pt.html" class="active">🇦🇴 PT</a>
+        </div>
+
+        <header>
+            <div class="logo">
+                <img src="logo.png" alt="MakaNetu Logo" style="width: 120px; height: auto;">
+            </div>
+            <h1>🗑️ Excluir Conta e Dados</h1>
+            <p class="subtitle"><strong>MakaNetu (Risk Place Angola)</strong></p>
+        </header>
+
+        <section>
+            <div class="info-box">
+                <p><strong>Seus Direitos de Privacidade</strong></p>
+                <p>Você tem o direito de solicitar a exclusão da sua conta e dados pessoais associados a qualquer momento. Esta página explica como exercer este direito em conformidade com GDPR, LGPD e leis de proteção de dados.</p>
+            </div>
+
+            <div class="danger-box">
+                <p><strong>⚠️ AVISO IMPORTANTE</strong></p>
+                <p>A exclusão da conta é <strong>permanente e irreversível</strong>. Uma vez excluída:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li>Você perderá o acesso à sua conta</li>
+                    <li>Seus dados pessoais serão permanentemente excluídos</li>
+                    <li>Você não receberá mais notificações de emergência</li>
+                    <li>Esta ação não pode ser desfeita</li>
+                </ul>
+            </div>
+
+            <h2>📱 Método 1: Excluir Conta no App (Recomendado)</h2>
+            <div class="method-card">
+                <h3><span class="icon">✅</span>Método Mais Rápido e Fácil</h3>
+                <p>Exclua sua conta diretamente do aplicativo MakaNetu:</p>
+                
+                <div class="steps">
+                    <div class="step">
+                        <span class="step-number">1</span>
+                        <strong>Abra o aplicativo MakaNetu</strong> no seu dispositivo
+                    </div>
+                    <div class="step">
+                        <span class="step-number">2</span>
+                        <strong>Faça login</strong> na sua conta (se ainda não estiver conectado)
+                    </div>
+                    <div class="step">
+                        <span class="step-number">3</span>
+                        <strong>Acesse Configurações</strong> (ícone ⚙️ no menu)
+                    </div>
+                    <div class="step">
+                        <span class="step-number">4</span>
+                        <strong>Toque em "Conta"</strong> ou "Perfil"
+                    </div>
+                    <div class="step">
+                        <span class="step-number">5</span>
+                        <strong>Role para baixo</strong> e toque em <span style="color: #dc3545; font-weight: bold;">"Excluir Conta"</span>
+                    </div>
+                    <div class="step">
+                        <span class="step-number">6</span>
+                        <strong>Confirme a exclusão</strong> digitando sua senha
+                    </div>
+                    <div class="step">
+                        <span class="step-number">7</span>
+                        <strong>Leia o aviso</strong> e toque em "Sim, Excluir Minha Conta"
+                    </div>
+                </div>
+
+                <div class="success-box" style="margin-top: 20px;">
+                    <p><strong>✅ Exclusão Instantânea:</strong> Sua conta será excluída imediatamente e você receberá um email de confirmação.</p>
+                </div>
+            </div>
+
+            <h2>📧 Método 2: Solicitação de Exclusão por Email</h2>
+            <div class="method-card">
+                <h3><span class="icon">📨</span>Solicitar Exclusão via Email</h3>
+                <p>Se você não consegue acessar o app ou prefere email, envie uma solicitação de exclusão para:</p>
+                
+                <div class="contact-form">
+                    <form id="deletionForm" action="mailto:riskplaceangola@gmail.com" method="post" enctype="text/plain">
+                        <div class="form-group">
+                            <label for="fullName">Nome Completo <span class="required">*</span></label>
+                            <input type="text" id="fullName" name="fullName" required placeholder="Seu nome completo como registrado">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Endereço de Email (registrado no MakaNetu) <span class="required">*</span></label>
+                            <input type="email" id="email" name="email" required placeholder="seu.email@exemplo.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userId">ID de Usuário ou Número de Telefone (se conhecido)</label>
+                            <input type="text" id="userId" name="userId" placeholder="Opcional - ajuda-nos a localizar sua conta mais rapidamente">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="reason">Motivo da Exclusão (Opcional)</label>
+                            <select id="reason" name="reason">
+                                <option value="">Selecione um motivo (opcional)</option>
+                                <option value="privacy">Preocupações com privacidade</option>
+                                <option value="not_using">Não uso mais o aplicativo</option>
+                                <option value="alternative">Encontrei uma alternativa</option>
+                                <option value="technical">Problemas técnicos</option>
+                                <option value="other">Outro</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="additionalInfo">Informações Adicionais (Opcional)</label>
+                            <textarea id="additionalInfo" name="additionalInfo" placeholder="Algum detalhe adicional que gostaria de compartilhar..."></textarea>
+                        </div>
+
+                        <div class="alert-box">
+                            <p><strong>⚠️ Verificação de Identidade Necessária</strong></p>
+                            <p>Para proteger sua privacidade, podemos solicitar que você verifique sua identidade antes de processar a solicitação de exclusão. Isso pode incluir:</p>
+                            <ul style="margin-left: 20px; margin-top: 10px;">
+                                <li>Responder perguntas de segurança</li>
+                                <li>Fornecer prova de propriedade da conta</li>
+                                <li>Confirmar via código de verificação enviado para seu email registrado</li>
+                            </ul>
+                        </div>
+
+                        <div class="button-group">
+                            <button type="submit" class="button">
+                                <span class="icon">📧</span> Enviar Solicitação de Exclusão
+                            </button>
+                            <button type="reset" class="button button-secondary">
+                                <span class="icon">🔄</span> Limpar Formulário
+                            </button>
+                        </div>
+                    </form>
+                </div>
+
+                <div class="info-box" style="margin-top: 20px;">
+                    <p><strong>📧 Modelo de Email (Copiar e Colar):</strong></p>
+                    <pre style="background: white; padding: 15px; border-radius: 4px; overflow-x: auto;">
+Para: riskplaceangola@gmail.com
+Assunto: Solicitação de Exclusão de Conta - MakaNetu
+
+Prezada Equipe de Suporte MakaNetu,
+
+Solicito a exclusão permanente da minha conta e todos os dados pessoais associados, de acordo com as regulamentações de proteção de dados GDPR/LGPD.
+
+Detalhes da Conta:
+- Nome Completo: [Seu Nome Completo]
+- Endereço de Email: [seu.email@exemplo.com]
+- ID de Usuário (se conhecido): [Seu ID de Usuário]
+- Número de Telefone (se registrado): [Seu Telefone]
+
+Entendo que:
+1. Esta ação é permanente e irreversível
+2. Todos os meus dados pessoais serão excluídos
+3. Os relatórios públicos de incidentes serão anonimizados
+4. Não receberei mais notificações de emergência
+
+Por favor, confirme o recebimento desta solicitação e processe a exclusão dentro de 30 dias conforme exigido por lei.
+
+Obrigado(a),
+[Seu Nome]
+                    </pre>
+                </div>
+            </div>
+
+            <h2>📊 Quais Dados Serão Excluídos?</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Tipo de Dado</th>
+                        <th>Ação</th>
+                        <th>Período de Retenção</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><strong>Informações Pessoais</strong><br>(Nome, email, senha)</td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Foto de Perfil</strong></td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Número de Telefone</strong></td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Histórico de Localização GPS</strong></td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Device ID & Token FCM</strong></td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Tokens de Autenticação</strong></td>
+                        <td><span style="color: #dc3545;">✗ Excluído Permanentemente</span></td>
+                        <td>Imediato</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Relatórios Públicos de Incidentes</strong><br>(criados por você)</td>
+                        <td><span style="color: #28a745;">✓ Retido (Anonimizado)</span></td>
+                        <td>Permanente (segurança pública)</td>
+                    </tr>
+                    <tr>
+                        <td><strong>Alertas de Emergência</strong><br>(enviados para ERCE/ERFCE)</td>
+                        <td><span style="color: #28a745;">✓ Retido (Anonimizado)</span></td>
+                        <td>Requisito legal</td>
+                    </tr>
+                </tbody>
+            </table>
+
+            <div class="alert-box">
+                <p><strong>📌 Por Que Alguns Dados São Retidos (Anonimizados):</strong></p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><strong>Segurança Pública:</strong> Relatórios de incidentes ajudam a proteger a comunidade e devem permanecer disponíveis</li>
+                    <li><strong>Conformidade Legal:</strong> Registros de emergência podem ser exigidos por autoridades para investigações</li>
+                    <li><strong>Análise Estatística:</strong> Dados anonimizados ajudam a melhorar estratégias de segurança pública</li>
+                    <li><strong>Sem Vínculo Pessoal:</strong> Dados retidos são completamente anonimizados e não podem ser rastreados até você</li>
+                </ul>
+            </div>
+
+            <h2>⏱️ Cronograma de Processamento</h2>
+            <div class="steps">
+                <div class="step">
+                    <span class="step-number">1</span>
+                    <strong>Solicitação Recebida:</strong> Reconhecemos sua solicitação de exclusão em 24 horas
+                </div>
+                <div class="step">
+                    <span class="step-number">2</span>
+                    <strong>Verificação de Identidade:</strong> 1-3 dias úteis (se solicitação por email)
+                </div>
+                <div class="step">
+                    <span class="step-number">3</span>
+                    <strong>Exclusão de Dados:</strong> Concluída em até 7 dias úteis
+                </div>
+                <div class="step">
+                    <span class="step-number">4</span>
+                    <strong>Email de Confirmação:</strong> Você recebe confirmação final da exclusão
+                </div>
+                <div class="step">
+                    <span class="step-number">5</span>
+                    <strong>Prazo Máximo:</strong> 30 dias corridos (conforme exigido por GDPR/LGPD)
+                </div>
+            </div>
+
+            <h2>🔐 Segurança de Dados Durante a Exclusão</h2>
+            <ul>
+                <li><strong>Apagamento Seguro:</strong> Os dados são sobrescritos de forma segura e não podem ser recuperados</li>
+                <li><strong>Remoção de Backups:</strong> Dados são removidos de todos os backups em até 90 dias</li>
+                <li><strong>Notificação a Terceiros:</strong> Notificamos Firebase, Google Maps e outros serviços para excluir seus dados</li>
+                <li><strong>Trilha de Auditoria:</strong> Mantemos um registro seguro de solicitações de exclusão (sem dados pessoais) para conformidade legal</li>
+            </ul>
+
+            <h2>❓ Perguntas Frequentes</h2>
+
+            <h3>Posso recuperar minha conta após a exclusão?</h3>
+            <p><strong>Não.</strong> A exclusão da conta é permanente e irreversível. Você precisaria criar uma nova conta.</p>
+
+            <h3>O que acontece com meus relatórios de incidentes?</h3>
+            <p>Os relatórios públicos de incidentes permanecem visíveis, mas são <strong>anonimizados</strong> (exibidos como "Usuário Anônimo"). Isso preserva o histórico de segurança da comunidade enquanto protege sua privacidade.</p>
+
+            <h3>Os serviços de emergência ainda terão meus alertas antigos?</h3>
+            <p>Sim. Alertas de emergência enviados para ERCE/ERFCE podem ser retidos para fins legais e investigativos, mas sua identidade é anonimizada após a exclusão da conta.</p>
+
+            <h3>Posso excluir dados específicos sem excluir minha conta?</h3>
+            <p>Sim! Você pode:</p>
+            <ul>
+                <li>Atualizar informações do perfil no app</li>
+                <li>Remover sua foto de perfil</li>
+                <li>Desativar rastreamento de localização (Configurações → Privacidade)</li>
+                <li>Contate-nos para excluir dados específicos: <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></li>
+            </ul>
+
+            <h3>Quanto tempo leva a exclusão?</h3>
+            <ul>
+                <li><strong>Exclusão no app:</strong> Imediato</li>
+                <li><strong>Solicitação por email:</strong> Até 30 dias (normalmente 7 dias úteis)</li>
+            </ul>
+
+            <h3>Serei notificado quando a exclusão estiver completa?</h3>
+            <p>Sim, você receberá um email de confirmação no seu endereço de email registrado.</p>
+
+            <h3>E se eu estiver tendo problemas para excluir minha conta?</h3>
+            <p>Entre em contato com nossa equipe de suporte:</p>
+            <ul>
+                <li><strong>Email:</strong> <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></li>
+                <li><strong>GitHub Issues:</strong> <a href="https://github.com/risk-place-angola/mobile-risk-place/issues" target="_blank">github.com/risk-place-angola/mobile-risk-place/issues</a></li>
+                <li><strong>Discord:</strong> <a href="https://discord.gg/s2Nk4xYV" target="_blank">discord.gg/s2Nk4xYV</a></li>
+            </ul>
+
+            <h2>📜 Direitos Legais e Conformidade</h2>
+            <p>Este processo de exclusão está em conformidade com:</p>
+            <ul>
+                <li><strong>GDPR</strong> (Regulamento Geral de Proteção de Dados - União Europeia) - Artigo 17 "Direito ao Apagamento"</li>
+                <li><strong>LGPD</strong> (Lei Geral de Proteção de Dados - Brasil) - Artigo 18, Direito à Exclusão</li>
+                <li><strong>CCPA</strong> (California Consumer Privacy Act - EUA)</li>
+                <li><strong>Leis de Proteção de Dados de Angola</strong></li>
+                <li><strong>Google Play Store</strong> Requisitos de Segurança de Dados</li>
+                <li><strong>App Store</strong> Diretrizes de Privacidade</li>
+            </ul>
+
+            <h2>📞 Precisa de Ajuda?</h2>
+            <div class="contact-form" style="background-color: #f8f9fa;">
+                <h3 style="margin-top: 0;">Contato com Suporte</h3>
+                <p><strong>📧 Email:</strong> <a href="mailto:riskplaceangola@gmail.com">riskplaceangola@gmail.com</a></p>
+                <p><strong>🌐 Website:</strong> <a href="https://risk-place-angola.github.io/privacy-policy" target="_blank">Política de Privacidade</a></p>
+                <p><strong>💬 Comunidade Discord:</strong> <a href="https://discord.gg/s2Nk4xYV" target="_blank">discord.gg/s2Nk4xYV</a></p>
+                <p><strong>🐙 GitHub:</strong> <a href="https://github.com/risk-place-angola" target="_blank">github.com/risk-place-angola</a></p>
+                <p><strong>⏰ Tempo de Resposta:</strong> 24-72 horas (dias úteis)</p>
+            </div>
+
+            <div class="info-box" style="margin-top: 30px;">
+                <p><strong>🔓 Transparência Open Source</strong></p>
+                <p>MakaNetu é um projeto de código aberto. Você pode revisar nossa implementação de exclusão de dados em nossos repositórios públicos:</p>
+                <ul style="margin-left: 20px; margin-top: 10px;">
+                    <li><a href="https://github.com/risk-place-angola/backend-risk-place" target="_blank">Código-Fonte Backend</a></li>
+                    <li><a href="https://github.com/risk-place-angola/mobile-risk-place" target="_blank">Código-Fonte App Mobile</a></li>
+                </ul>
+            </div>
+        </section>
+
+        <footer>
+            <p><strong>MakaNetu (Risk Place Angola)</strong></p>
+            <p><em>Maka = Problema | Netu = Nosso | MakaNetu = Resolver problemas juntos</em></p>
+            <p style="margin-top: 15px;">
+                <a href="index.html">Política de Privacidade</a> •
+                <a href="delete-account_pt.html">Excluir Conta</a> •
+                <a href="https://github.com/risk-place-angola" target="_blank">GitHub</a> •
+                <a href="https://discord.gg/s2Nk4xYV" target="_blank">Discord</a>
+            </p>
+            <p style="margin-top: 15px; font-size: 0.85em;">
+                Última Atualização: 20 de Novembro de 2025<br>
+                Esta página está em conformidade com os requisitos GDPR, LGPD e CCPA
+            </p>
+        </footer>
+    </div>
+
+    <script>
+        // Form submission handling
+        document.getElementById('deletionForm').addEventListener('submit', function(e) {
+            // Let the default mailto: action proceed
+            alert('Seu cliente de email será aberto. Por favor, envie o email para completar sua solicitação de exclusão.\n\nSe seu cliente de email não abrir, por favor envie manualmente um email para: riskplaceangola@gmail.com');
+        });
+    </script>
+</body>
+</html>
